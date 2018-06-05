@@ -4,7 +4,6 @@ import 'mocha';
 import { assert } from 'chai';
 import { prop } from 'pope'
 import Knex from 'knex';
-import { mock } from 'sinon';
 
 import initUnique from '../../src/validations/unique';
 
