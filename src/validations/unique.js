@@ -21,8 +21,6 @@ export default function (knex) {
             query.whereNot('id', exclude);
         }
 
-        console.log(query.count('id as count').toString());
-
         return query.count('id as count')
             .then(results => {
                 const count = results[0].count.toString();
