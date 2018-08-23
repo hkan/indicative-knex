@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha -r babel-register -r babel-polyfill tests/**/*.spec.js"
   },
-  "author": "",
+  "author": "Hakan Aktaş <iletisim@hakanaktas.com.tr>",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.26.3",
