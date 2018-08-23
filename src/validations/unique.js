@@ -1,7 +1,7 @@
 export default function (knex) {
     return function unique(data, field, message, [tableName, dbField = field, exclude = null], get) {
 
-        if (!tableName) {
+        if ('string' !== typeof tableName || !tableName.length) {
             return Promise.reject('A proper table name should be provided.');
         }
 
